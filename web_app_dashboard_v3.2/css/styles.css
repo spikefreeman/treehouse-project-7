@@ -25,6 +25,7 @@
     width: 95vw;
 }
 
+
 @media (min-width: 768px) {
     .grid-container {
     grid-template-columns: 55px 1fr;
