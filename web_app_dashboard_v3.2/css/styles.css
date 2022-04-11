@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 100%;
@@ -8,9 +14,7 @@
     "main";
 }
 
-.header {
-    grid-area: header;
-}
+
 
 .navigation {
     grid-area: navigation;
@@ -25,6 +29,26 @@
     width: 95vw;
 }
 
+
+
+/* ----------------------------------------HEADER--------------------------------------------------- */
+
+header {
+    background: #7477bf;
+    color:#fff;
+}
+
+.header {
+    display: grid;
+    justify-content: space-between;
+    place-items: center;
+    grid-template-columns: 1fr auto auto auto auto;
+
+}
+
+
+
+/* --------------------------------------MEDIA Q--------------------------------------------------------*/    
 
 @media (min-width: 768px) {
     .grid-container {
