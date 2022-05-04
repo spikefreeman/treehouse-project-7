@@ -7,6 +7,8 @@
 
 .header {
     grid-area: header;
+    display: grid;
+    
 }
 
 .nav {
@@ -22,7 +24,7 @@
     width: 95vw;
 }
 
-
+/*-----------------------Tablet-------------------*/
 @media (min-width: 768px) {
     .grid-container {
     grid-template-columns: 55px 1fr;
@@ -51,4 +53,9 @@
         .widget-container-half {
         width: 45vw;
     }
+}
+
+/*--------------------Desktop----------------------*/
+@media (min-width: 1024px) {
+
 }
