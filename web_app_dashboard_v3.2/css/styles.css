@@ -1,5 +1,5 @@
 * {
-    font-family: "Courgette", serif;
+    font-family: "Roboto", serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -13,8 +13,8 @@
 }
 
 #bell{
-    max-width: 40px;
-    min-width: 30px;
+    max-width: 25px;
+    min-width: 25px;
     justify-self: end;
 }
 
@@ -32,6 +32,7 @@ svg{
 
 #profile-image{
     border-radius: 50%;
+    max-width: 40px;
 }
 
 .header {
@@ -102,6 +103,10 @@ h3{
 
 .widget-container-full, .widget-container-half {
     width: 95vw;
+}
+
+.image {
+    stroke: #f5f5f5;
 }
 
 /*-----------------------Tablet-------------------*/
