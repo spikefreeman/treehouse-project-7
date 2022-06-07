@@ -107,7 +107,9 @@ h3{
 
 .image {
     stroke: #f5f5f5;
+    max-width: 30px;
 }
+
 
 /*-----------------------Tablet-------------------*/
 @media (min-width: 768px) {
