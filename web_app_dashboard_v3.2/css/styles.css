@@ -18,14 +18,12 @@
     margin-right: 15px;
 }
 
-svg{
-    max-width: 50px;
+#bell path{
+    fill: #ffffff;
 }
 
-#profile-image{
-    border-radius: 50%;
-    max-width: 40px;
-    margin-right: 5px;
+svg{
+    max-width: 50px;
 }
 
 .header {
@@ -38,10 +36,10 @@ svg{
     padding: 10px;
 }
 
-h4{
-    justify-self: center;
-    font-weight: 100;
-    font-size: small;
+#profile-image{
+    border-radius: 50%;
+    max-width: 40px;
+    margin-right: 5px;
 }
 
 h1{
@@ -51,34 +49,34 @@ h1{
     
 }
 
+h4{
+    justify-self: center;
+    font-weight: 100;
+    font-size: small;
+}
+
 .nav {
     grid-area: navigation;
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     justify-items: center;
+    justify-content: center;
+    gap: 30px;
     background-color: #4d4c72;
+    padding: 8px;
 }
 
 .alert{
     background-color: #7477bf;
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     border-radius: 5px;
     margin: 10px;
+    padding: 10px;
     font-size: small;
 }
 
-
-#bell path{
-    fill: #ffffff;
-}
-
-.traffic-nav{
-    display: grid;
-    grid-auto-flow: column;
+.alert-banner{
+    display: flex;
+    justify-content: space-between;
 }
 
 .main {
@@ -87,16 +85,33 @@ h1{
     grid-template-rows: 1fr;
 }
 
-.socials{
+.traffic-nav{
     display: grid;
-    gap: 10px;
+    grid-auto-flow: column;
+}
+
+.traffic{
+    padding: 10px;
+}
+
+.daily{
+    padding: 10px;
+}
+
+.mobile {
+    padding: 10px;
+}
+
+.socials{
+    display: flex;
+    
 }
 
 .social-container{
     display: grid;
     grid-auto-flow: column;
     background-color: #f5f5f5;
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .members-container{
@@ -120,6 +135,14 @@ h1{
     min-width: 30px;
 }
 
+/*----animation---*/
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+.grow:hover { 
+    transform: scale(1.1); 
+}
 
 /*-----------------------Tablet-------------------*/
 @media (min-width: 768px) {
