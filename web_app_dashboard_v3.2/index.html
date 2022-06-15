@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css-toggle-switch-master/dist/toggle-switch.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@300&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">  
     <title>Dashboard</title>
 </head>
 
@@ -87,7 +87,7 @@
 
         <!-- social media -->
         <section id="socials">
-            <h3>Social Stats</h3>
+            <h3 class="sec-head">Social Stats</h3>
             <div class="social-container">
                 <div class="social-image">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +127,7 @@
 
         <!-- Members -->
         <section class="members">
-            <h3>New Members</h3>
+            <h3 class="sec-head">New Members</h3>
             <div class="members-container">
                 <img src="images/member-1.jpg" class="profile-image">
                 <div class="members-text">
@@ -167,7 +167,7 @@
 
         <section class="activity">
 
-            <h3>Recent Activity</h3>
+            <h3 class="sec-head">Recent Activity</h3>
             <div class="members-container">
                 <img src="images/member-1.jpg" class="profile-image">
                 <div class="members-text">
@@ -203,7 +203,7 @@
 
         <!-- messaging widget -->
         <section class="message">
-        <h3>Message User</h3>
+        <h3 class="sec-head">Message User</h3>
             <form class="widget-container">
                 <input type="text" placeholder="Search for user" class="form-field" id="userField">
                 <textarea placeholder="Message for user" class="form-area" id= "messageField" ></textarea> 
@@ -213,25 +213,23 @@
 
         <!-- local settings widget -->
         <section id="settings">
-            <h3>Settings</h3>
-            <div>
-                <div class="switch-btns">
-                    <label class="switch-light switch-ios" onclick="">
-                        <input type="checkbox">
-                        <p>
-                            Send Email Notifications
-                        </p>
-                        <span class="btn-toggle">
-                            <span>Off</span>
-                            <span>On</span>
-                            <a></a>
-                        </span>
-                    </label>
-                </div>
+            <h3 class="sec-head">Settings</h3>
+            <div class="switches">        
+                <label class="switch-light switch-ios" onclick="">
+                    <input type="checkbox">
+                    <p class="bnt-lable">
+                        Send Email Notifications
+                    </p>
+                    <span class="btn-toggle">
+                        <span>Off</span>
+                        <span>On</span>
+                        <a></a>
+                    </span>
+                </label>
 
                 <label class="switch-light switch-ios" onclick="">
                     <input type="checkbox">
-                    <p>
+                    <p class="bnt-lable">
                         Set Profile to Public
                     </p>
                     <span>
