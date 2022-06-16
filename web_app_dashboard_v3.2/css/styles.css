@@ -5,6 +5,11 @@
     margin: 0;
   }
 
+  ul{
+    list-style-type: none;
+    text-align: center;
+  }
+
 .grid.container{
     display: grid;
     grid-template-columns: 100%;
@@ -34,6 +39,17 @@ svg{
     background-color: #7477bf;
     color: #ffffff;
     padding: 10px;
+}
+
+.main-header{
+    background-color: #c9c8c8;
+}
+
+.headline{
+    padding: 5px;
+    text-align: center;
+    width: 40%;
+    background-color: white;
 }
 
 #profile-image{
@@ -92,6 +108,16 @@ h4{
 
 .traffic{
     padding: 10px;
+}
+
+.traffic-nav-link{
+    padding: 5px;
+}
+
+.traffic-nav-link.active{
+    background-color: lightgreen;
+    color: #ffffff;
+    border-radius: 50px;
 }
 
 .daily{
@@ -153,7 +179,7 @@ h4{
 /* Members */
 
 .members-container{
-    margin: 15px 10px;
+    margin: 15px 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,16 +303,29 @@ h4{
 /*-----------------------Tablet-------------------*/
 @media (min-width: 768px) {
     .grid-container {
+    display: grid;
     grid-template-columns: 55px 1fr;
-    grid-template-areas: "header header" "navigation main";
+    grid-template-areas: 
+    "header header" 
+    "navigation main";
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .main {
         grid-template-columns: 50%;
     }
 
-    .traffic, .social {
+    .traffic, .social, .main-header, .alert, #socials {
         grid-column: 1 / span 2;
+    }
+
+    #socials {
+        display: flex;
+        flex-direction: row;
     }
 
     .daily, .members, .message {
