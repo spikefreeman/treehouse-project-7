@@ -316,30 +316,83 @@ h4{
     }
 
     .main {
-        grid-template-columns: 50%;
+        grid-template-columns: 50% 50%;
     }
 
-    .traffic, .social, .main-header, .alert, #socials {
+    .traffic, .main-header, .alert, #socials, .members, .activity, .message,  #settings {
         grid-column: 1 / span 2;
+    }
+
+    .daily {
+        grid-column: 1 / span 1;
+    }
+
+    .mobile {
+        grid-column: 2;
+    }
+
+    .mobile, .daily {
+        padding: 5px;
+    }
+
+    .traffic-header {
+        display: flex;
+        justify-content: space-between;
     }
 
     #socials {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
-    .daily, .members, .message {
-        grid-column: 1 / span 1;
+    .social-container {
+        margin: 10px;
+        width: 30%;
+        
     }
 
-    .mobile, .activity, .settings {
-        grid-column: 2 / span 1;
+    .members-container > p {
+        margin-left: auto;
+    }
+
+
+    .members-container {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .members-text {
+        padding: 10px;
+        align-items: baseline;
+    }
+
+    .sec-head {
+        width: 100%;
+    }
+
+    #settings {
+        display: flex;
+    }
+
+    .bnt-lable{
+        width: 30%;
+    }
+
+    .switch-light.switch-ios {
+        justify-content: flex-start;
+    }
+
+    .switch-ios.switch-light > span {
+        width: 10%;
     }
 
     .widget-container-full {
         width: 90vw;
         }
-        .widget-container-half {
+
+    .widget-container-half {
         width: 45vw;
     }
 }
