@@ -18,13 +18,36 @@
 }
 
 #bell{
-    max-width: 25px;
-    min-width: 25px;
+    width: 25px;
     margin-right: 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 #bell path{
     fill: #ffffff;
+}
+
+#bell:hover{
+    transition: all .2s ease-in-out; 
+    transform: scale(1.1);
+}
+
+ #notifications {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: small;
 }
 
 svg{
@@ -291,15 +314,6 @@ h4{
     min-width: 30px;
 }
 
-/*----animation---*/
-.grow { 
-    transition: all .2s ease-in-out; 
-    }
-    
-.grow:hover { 
-    transform: scale(1.1); 
-}
-
 /*-----------------------Tablet-------------------*/
 @media (min-width: 768px) {
     .grid-container {
@@ -400,4 +414,26 @@ h4{
 /*--------------------Desktop----------------------*/
 @media (min-width: 1024px) {
 
+    .headline{
+        width: 20%;
+    }
+    .members, .message {
+        grid-column: 1 / span 1;
+    }
+
+    .activity, #settings {
+        grid-column: 2 / span 2;
+    }
+
+    #messageField {
+        padding-bottom: 50px;
+    }
+
+    .bnt-lable {
+        width: 40%
+    }
+
+    .switch-ios.switch-light > span {
+        width: 30%;
+    }
 }
