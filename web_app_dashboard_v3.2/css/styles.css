@@ -266,7 +266,7 @@ h4{
     align-items: center;
   }
 
-  .switch-ios.switch-light > span {
+  .switch-ios.switch-light > .btn-toggle {
     width: 25%;
   }
 
@@ -290,9 +290,13 @@ h4{
     justify-self: flex-end;
 }
 
-.bnt-lable{
+#bnt-lable1, #btn-lable2 {
     width: 65%;
     padding-left: 10px;
+    justify-self: center;
+    font-weight: 100;
+    font-size: small;
+    background-color: white;
 }
 
 
@@ -390,7 +394,7 @@ h4{
         display: flex;
     }
 
-    .bnt-lable{
+    #bnt-lable1, #btn-lable2{
         width: 30%;
     }
 
@@ -429,7 +433,7 @@ h4{
         padding-bottom: 50px;
     }
 
-    .bnt-lable {
+    #bnt-lable1, #btn-lable2 {
         width: 40%
     }
 
